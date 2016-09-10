@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <memory>
+#include <tmmintrin.h>
 #include "../util/debug.hh"
 #include "../util/options.hh"
 #include "../util/nd_array.hh"
@@ -11,9 +12,7 @@
 #include "branch.hh"
 #include "../util/aligned_block.hh"
 #include "../util/block_based_image.hh"
-#include <smmintrin.h>
-#include <immintrin.h>
-#include <emmintrin.h>
+#include "../util/mm_mullo_epi32.hh"
 
 class BoolEncoder;
 constexpr bool advanced_dc_prediction = true;
